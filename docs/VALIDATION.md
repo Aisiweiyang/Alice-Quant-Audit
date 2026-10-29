@@ -32,4 +32,7 @@
 本轮测试与演示不下载、不验证真实行情，不重现旧真实数据收益，不等于严格 PIT、
 未来验证或实盘验收。旧真实锚点只作为回归比对器的固定输入。
 pandas 和 matplotlib 仍会输出未来弃用提示；当前测试通过，尚未支持 pandas 4。
-GitHub Actions 配置覆盖 Ubuntu 和 Windows / Python 3.12，远端结果以 Actions 页面为准。
+GitHub Actions 的 Ubuntu 与 Windows / Python 3.12 均已通过，
+对应源码提交 `c83fd7fb4938d47db95e0aaf6875b0d27bec9136`，见
+[本次运行](https://github.com/Aisiweiyang/alice-quant-audit-open/actions/runs/40871891290)。
+后续只修改首页介绍和本验证记录，不改变代码。

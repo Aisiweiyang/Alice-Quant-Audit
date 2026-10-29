@@ -1,21 +1,19 @@
 # Alice Quant Audit · Alice 商业化 MVP 开源版
 
-**A 股量化策略研究审计工具：检查数据、回测假设与结果稳定性，生成可追溯的研究报告。**
+Alice Quant Audit 用来检查 A 股量化策略的回测结果。导入行情后，可以先查数据质量，
+再比较策略、费用和参数对结果的影响，最后生成带图表和明细的 HTML 报告。
 
-Local-first research auditing for A-share backtests. Includes data checks, cost and
-parameter stress tests, overfitting diagnostics and offline HTML reports.
+项目在本机运行，提供网页和命令行两种入口。
 
-这是从 Alice 的历史研究原型整理出的独立开源项目，采用 MIT 许可证。
-它包含自己的研究回测内核，不是当前 Alice V8 的插件，也未完成与 V8 的接口适配。
-后续不定期维护，暂无固定更新周期。
+**作者：[Aisiweiyang](https://github.com/Aisiweiyang)** · [MIT 许可证](LICENSE)
 
 ## 能做什么
 
-- 对 CSV / 本机可信缓存检查覆盖、OHLC、交易状态、估值和基准等字段。
-- 运行内置趋势策略与截面多因子策略，比较 2–8 个参数方案。
-- 检查成本、参数、分段与滚动窗口敏感性，提供 CSCV/PBO 和 DSR 研究诊断。
-- 生成 HTML、图表、指标 JSON、数据质量说明和包含哈希的产物清单。
-- 通过本机网页运行分析、查看历史报告和比较结果。
+- 检查 CSV 或本机缓存中的缺失记录、价格异常、停牌状态、估值和基准数据。
+- 运行趋势策略和截面多因子策略，同时比较 2–8 个参数方案。
+- 改变费用、参数和回测区间，观察结果是否稳定；计算 PBO、DSR 等过拟合诊断指标。
+- 导出 HTML 报告、图表和指标明细，用文件哈希核对输入与产物。
+- 在网页中发起分析、查看历史报告和比较结果。
 
 ## 快速开始
 
