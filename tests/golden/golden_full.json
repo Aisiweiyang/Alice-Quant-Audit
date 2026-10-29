@@ -1,0 +1,207 @@
+{
+  "charts_written": [
+    "charts/drawdown.png",
+    "charts/equity_curve.png",
+    "charts/exposure.png",
+    "charts/ic_by_date.png",
+    "charts/ic_decay.png",
+    "charts/long_short.png",
+    "charts/monthly_returns.png",
+    "charts/quantile_heatmap.png",
+    "charts/quantile_returns.png",
+    "charts/return_distribution.png",
+    "charts/rolling_sharpe.png",
+    "charts/rolling_windows.png",
+    "charts/scenario_deltas.png",
+    "charts/trade_distribution.png"
+  ],
+  "data_rating": "READY",
+  "drawdown_periods": [
+    {
+      "decline_days": 46,
+      "depth_pct": -4.7,
+      "peak_date": "2025-09-15",
+      "recovery_date": null,
+      "recovery_days": null,
+      "valley_date": "2025-11-18"
+    },
+    {
+      "decline_days": 12,
+      "depth_pct": -2.02,
+      "peak_date": "2025-08-15",
+      "recovery_date": "2025-09-12",
+      "recovery_days": 8,
+      "valley_date": "2025-09-02"
+    },
+    {
+      "decline_days": 4,
+      "depth_pct": -0.82,
+      "peak_date": "2025-08-01",
+      "recovery_date": "2025-08-15",
+      "recovery_days": 6,
+      "valley_date": "2025-08-07"
+    },
+    {
+      "decline_days": 3,
+      "depth_pct": -0.75,
+      "peak_date": "2025-07-08",
+      "recovery_date": "2025-07-15",
+      "recovery_days": 2,
+      "valley_date": "2025-07-11"
+    },
+    {
+      "decline_days": 3,
+      "depth_pct": -0.68,
+      "peak_date": "2025-07-23",
+      "recovery_date": "2025-07-29",
+      "recovery_days": 1,
+      "valley_date": "2025-07-28"
+    }
+  ],
+  "factor_diagnostics": {
+    "ok_factor_count": 13,
+    "status": "present"
+  },
+  "manifest_keys": [
+    "benchmark_used",
+    "block_message",
+    "blocked",
+    "created_at",
+    "disclaimer",
+    "git",
+    "inputs",
+    "notes",
+    "outputs_sha256",
+    "parameters",
+    "product",
+    "report_id",
+    "timings_seconds"
+  ],
+  "manifest_output_names": [
+    "charts/drawdown.png",
+    "charts/equity_curve.png",
+    "charts/exposure.png",
+    "charts/ic_by_date.png",
+    "charts/ic_decay.png",
+    "charts/long_short.png",
+    "charts/monthly_returns.png",
+    "charts/quantile_heatmap.png",
+    "charts/quantile_returns.png",
+    "charts/return_distribution.png",
+    "charts/rolling_sharpe.png",
+    "charts/rolling_windows.png",
+    "charts/scenario_deltas.png",
+    "charts/trade_distribution.png",
+    "data_quality.json",
+    "effective_config.json",
+    "executive_summary.md",
+    "factor_diagnostics.csv",
+    "factor_diagnostics_metadata.json",
+    "index.html",
+    "metrics.json",
+    "rolling_oos.json",
+    "scenario_comparison.csv",
+    "strategy_audit.json"
+  ],
+  "metrics": {
+    "alpha_annualized_pct": -9.23,
+    "annual_volatility_pct": 7.62,
+    "avg_loss": -649.0,
+    "avg_win": 1038.8,
+    "benchmark_return_pct": 8.4,
+    "beta": 0.982,
+    "cagr_pct": 5.82,
+    "calmar_ratio": 1.24,
+    "down_capture_pct": 133.34,
+    "excess_return_pct": -5.54,
+    "information_ratio": -1.556,
+    "max_consecutive_losses": 8,
+    "max_consecutive_wins": 5,
+    "max_drawdown_pct": -4.7,
+    "profit_factor": 1.24,
+    "recovery_factor": 0.609,
+    "sharpe_ci_high": 2.99,
+    "sharpe_ci_includes_zero": true,
+    "sharpe_ci_low": -1.51,
+    "sharpe_observations": 130,
+    "sharpe_ratio": 0.76,
+    "sharpe_reliable": true,
+    "sortino_ratio": 1.43,
+    "tail_ratio": 1.229,
+    "total_return_pct": 2.86,
+    "total_trades": 32,
+    "unsold_final_positions": 0,
+    "up_capture_pct": 89.93,
+    "win_rate_pct": 43.8
+  },
+  "pipeline": {
+    "cache_metadata_source": "SYNTHETIC-DEMO:random_walk",
+    "dataset_sha256": "e6a3b4773fbb9d2138cf3dbea2b3474442d5fbc9d2d671db8d59e74b7695db5f",
+    "end": "2025-12-31",
+    "mode": "full",
+    "start": "2025-07-01",
+    "strategy": "classic_trend"
+  },
+  "rolling": {
+    "ci_zero_share": 1.0,
+    "ok_windows": 3,
+    "positive_share": 0.667,
+    "status": "ok",
+    "verdict": "mixed"
+  },
+  "score": {
+    "dimensions": [
+      {
+        "earned_points": 20.0,
+        "key": "data_quality",
+        "max_points": 20,
+        "status": "pass"
+      },
+      {
+        "earned_points": 20.0,
+        "key": "temporal_integrity",
+        "max_points": 20,
+        "status": "pass"
+      },
+      {
+        "earned_points": 12.0,
+        "key": "out_of_sample",
+        "max_points": 20,
+        "status": "partial"
+      },
+      {
+        "earned_points": 15.0,
+        "key": "execution_realism",
+        "max_points": 15,
+        "status": "pass"
+      },
+      {
+        "earned_points": 10.0,
+        "key": "cost_sensitivity",
+        "max_points": 10,
+        "status": "pass"
+      },
+      {
+        "earned_points": 8.0,
+        "key": "parameter_stability",
+        "max_points": 10,
+        "status": "pass"
+      },
+      {
+        "earned_points": 5.0,
+        "key": "reproducibility",
+        "max_points": 5,
+        "status": "pass"
+      }
+    ],
+    "failed_dimensions": [],
+    "grade_label": "研究证据较完整",
+    "insufficient_dimensions": [],
+    "score": 90
+  },
+  "segment": {
+    "sharpe_gap": 1.19,
+    "status": "ok",
+    "verdict": "weakly_consistent"
+  }
+}

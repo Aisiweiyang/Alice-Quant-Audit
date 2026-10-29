@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "source_system": "a-share-mainboard-research",
+  "strategy_version": "candidate-score-1",
+  "market": "CN_A_SHARE",
+  "trade_date": "2026-08-28",
+  "generated_at": "2026-08-28T18:30:00+08:00",
+  "quality": {
+    "passed": true,
+    "universe_coverage": 1.0,
+    "history_coverage": 0.99
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "code": "600000",
+      "name": "示例股票A",
+      "score": 86.8,
+      "risk": "中",
+      "components": {
+        "趋势": 95.0,
+        "动量": 88.0,
+        "估值": 82.0
+      },
+      "reasons": ["趋势", "动量", "估值"]
+    },
+    {
+      "rank": 2,
+      "code": "000001",
+      "name": "示例股票B",
+      "score": 84.2,
+      "risk": "低",
+      "components": {
+        "趋势": 90.0,
+        "稳定性": 85.0
+      },
+      "reasons": ["趋势", "稳定性"]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "experiment_name": "sharpe-guardrails-v1",
+  "notes": "仅比较市场趋势确认与入场评分缓冲。当前主回测不做按排名强制换仓，因此本实验不虚构换仓缓冲；2024-09-26以后只用于最终验收，不应据此反复寻优。",
+  "variants": [
+    {
+      "name": "baseline",
+      "description": "Alice v4默认：MA20过滤，最低评分5.0",
+      "overrides": {}
+    },
+    {
+      "name": "market-slope-5",
+      "description": "要求沪深300的MA20在最近5个有效观察点保持上升",
+      "overrides": {
+        "ma_slope_lookback": 5
+      }
+    },
+    {
+      "name": "entry-score-5_5",
+      "description": "最低入场评分从5.0提高到5.5，过滤边缘信号",
+      "overrides": {
+        "min_score": 5.5
+      }
+    },
+    {
+      "name": "combined",
+      "description": "同时启用MA20斜率确认和5.5分入场缓冲",
+      "overrides": {
+        "ma_slope_lookback": 5,
+        "min_score": 5.5
+      }
+    }
+  ]
+}

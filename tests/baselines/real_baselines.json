@@ -1,0 +1,91 @@
+{
+  "description": "真实数据双基线锚点（2026-09-13/14实测，report_id仅供溯源，比对靠指标）。所有锚点指标在同代码+同数据+固定种子下均为确定性输出：回归重跑必须逐位一致；不一致=环境差异或口径漂移，禁止静默通过。tmc_*为2026-09-13金额重排口径。",
+  "data_cache": "local_data/alice_historical_main_2015_2026.pkl",
+  "baselines": [
+    {
+      "key": "near",
+      "title": "近端窗口 full（2024-01-01~2026-06-30，全功能）",
+      "origin_report_id": "real_full_near_20260912",
+      "quick": true,
+      "args": {
+        "start": "2024-01-01",
+        "end": "2026-06-30"
+      },
+      "anchors": {
+        "data_rating": "READY",
+        "total_return_pct": 45.48,
+        "cagr_pct": 16.22,
+        "max_drawdown_pct": -13.68,
+        "annual_volatility_pct": 13.81,
+        "sharpe_ratio": 1.21,
+        "sharpe_ci_low": -0.11,
+        "sharpe_ci_high": 2.54,
+        "sharpe_ci_includes_zero": true,
+        "sortino_ratio": 1.61,
+        "calmar_ratio": 1.19,
+        "var_95_pct": -1.4,
+        "cvar_95_pct": -1.96,
+        "mc_max_drawdown_pct_p50": -13.71,
+        "mc_max_drawdown_pct_p95": -8.22,
+        "mc_terminal_return_p5_pct": 0.74,
+        "tmc_terminal_return_p5_pct": 45.48,
+        "tmc_round_trips": 203,
+        "omega_ratio": 1.258,
+        "alpha_annualized_pct": 9.94,
+        "beta": 0.404,
+        "excess_return_pct": -1.57,
+        "total_trades": 203,
+        "win_rate_pct": 42.9,
+        "profit_factor": 1.44,
+        "unsold_final_positions": 0
+      },
+      "anchor_notes": {
+        "tmc_terminal_return_p5_pct": "近端原报告(real_full_near_20260912)生成于tmc旧口径(收益率复利,已废弃,原值+1628.25失真)；新口径下终值p5=已实现总收益(加法不变性)，故锚点取45.48=total_return_pct。"
+      }
+    },
+    {
+      "key": "long",
+      "title": "长窗口 full（2015-01-01~2026-08-01，--no-stress --no-segment）",
+      "origin_report_id": "real_full_long_20260912",
+      "quick": false,
+      "args": {
+        "start": "2015-01-01",
+        "end": "2026-08-01",
+        "extra": ["--no-stress", "--no-segment"]
+      },
+      "anchors": {
+        "data_rating": "READY",
+        "total_return_pct": 116.79,
+        "cagr_pct": 6.91,
+        "max_drawdown_pct": -33.91,
+        "annual_volatility_pct": 15.45,
+        "sharpe_ratio": 0.53,
+        "sharpe_ci_low": -0.13,
+        "sharpe_ci_high": 1.16,
+        "sharpe_ci_includes_zero": true,
+        "sortino_ratio": 0.63,
+        "calmar_ratio": 0.2,
+        "var_95_pct": -1.49,
+        "cvar_95_pct": -2.39,
+        "mc_max_drawdown_pct_p50": -32.88,
+        "mc_max_drawdown_pct_p95": -20.85,
+        "mc_terminal_return_p5_pct": -13.72,
+        "tmc_max_drawdown_pct_p50": -19.62,
+        "tmc_max_drawdown_pct_p95": -13.24,
+        "tmc_terminal_return_p5_pct": 116.79,
+        "tmc_round_trips": 933,
+        "omega_ratio": 1.112,
+        "alpha_annualized_pct": 6.74,
+        "beta": 0.364,
+        "excess_return_pct": 90.79,
+        "total_trades": 933,
+        "win_rate_pct": 40.3,
+        "profit_factor": 1.18,
+        "unsold_final_positions": 0
+      },
+      "anchor_notes": {
+        "tmc_terminal_return_p5_pct": "加法不变性：恒等于total_return_pct。"
+      }
+    }
+  ]
+}

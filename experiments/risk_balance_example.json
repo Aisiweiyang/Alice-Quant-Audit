@@ -1,0 +1,27 @@
+{
+  "experiment_name": "risk-balance-v1",
+  "notes": "只比较持仓分散度，其他参数保持不变。蓝色高亮结果不能直接成为生产参数。",
+  "variants": [
+    {
+      "name": "baseline-8",
+      "description": "Alice v4默认：最多8只，每只12%",
+      "overrides": {}
+    },
+    {
+      "name": "diversified-12",
+      "description": "最多12只，每只8%，观察分散化是否改善回撤与夏普",
+      "overrides": {
+        "max_positions": 12,
+        "max_position_pct": 0.08
+      }
+    },
+    {
+      "name": "diversified-16",
+      "description": "最多16只，每只6%，进一步降低单股风险",
+      "overrides": {
+        "max_positions": 16,
+        "max_position_pct": 0.06
+      }
+    }
+  ]
+}

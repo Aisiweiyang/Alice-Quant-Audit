@@ -1,0 +1,7 @@
+numpy>=2.2,<3
+pandas>=2.2,<4
+matplotlib>=3.9,<4
+Pillow>=10,<13
+python-docx>=1.1,<2
+baostock>=0.8.8,<1
+akshare>=1.12,<2

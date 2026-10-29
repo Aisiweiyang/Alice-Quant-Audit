@@ -1,0 +1,7 @@
+{
+  "plans": [
+    {"label": "score_55", "strategy_params": {"minimum_score": 55}},
+    {"label": "score_60", "strategy_params": {"minimum_score": 60}},
+    {"label": "score_65", "strategy_params": {"minimum_score": 65}}
+  ]
+}

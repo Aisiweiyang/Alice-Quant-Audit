@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "source_system": "SYNTHETIC-DEMO",
+  "strategy_version": "synthetic-demo-1",
+  "market": "CN_A_SHARE",
+  "trade_date": "2025-12-30",
+  "generated_at": "2026-10-29T20:11:08.941032",
+  "quality": {
+    "passed": true,
+    "universe_coverage": 1.0,
+    "history_coverage": 1.0
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "code": "sh.600000",
+      "name": "合成演示股票1",
+      "score": 80.0,
+      "risk": "演示",
+      "components": {},
+      "reasons": [
+        "SYNTHETIC-DEMO"
+      ]
+    },
+    {
+      "rank": 2,
+      "code": "sh.600002",
+      "name": "合成演示股票2",
+      "score": 79.0,
+      "risk": "演示",
+      "components": {},
+      "reasons": [
+        "SYNTHETIC-DEMO"
+      ]
+    },
+    {
+      "rank": 3,
+      "code": "sh.600004",
+      "name": "合成演示股票3",
+      "score": 78.0,
+      "risk": "演示",
+      "components": {},
+      "reasons": [
+        "SYNTHETIC-DEMO"
+      ]
+    },
+    {
+      "rank": 4,
+      "code": "sh.600006",
+      "name": "合成演示股票4",
+      "score": 77.0,
+      "risk": "演示",
+      "components": {},
+      "reasons": [
+        "SYNTHETIC-DEMO"
+      ]
+    },
+    {
+      "rank": 5,
+      "code": "sh.600008",
+      "name": "合成演示股票5",
+      "score": 76.0,
+      "risk": "演示",
+      "components": {},
+      "reasons": [
+        "SYNTHETIC-DEMO"
+      ]
+    },
+    {
+      "rank": 6,
+      "code": "sz.000001",
+      "name": "合成演示股票6",
+      "score": 75.0,
+      "risk": "演示",
+      "components": {},
+      "reasons": [
+        "SYNTHETIC-DEMO"
+      ]
+    },
+    {
+      "rank": 7,
+      "code": "sz.000003",
+      "name": "合成演示股票7",
+      "score": 74.0,
+      "risk": "演示",
+      "components": {},
+      "reasons": [
+        "SYNTHETIC-DEMO"
+      ]
+    },
+    {
+      "rank": 8,
+      "code": "sz.000005",
+      "name": "合成演示股票8",
+      "score": 73.0,
+      "risk": "演示",
+      "components": {},
+      "reasons": [
+        "SYNTHETIC-DEMO"
+      ]
+    },
+    {
+      "rank": 9,
+      "code": "sz.000007",
+      "name": "合成演示股票9",
+      "score": 72.0,
+      "risk": "演示",
+      "components": {},
+      "reasons": [
+        "SYNTHETIC-DEMO"
+      ]
+    },
+    {
+      "rank": 10,
+      "code": "sz.000009",
+      "name": "合成演示股票10",
+      "score": 71.0,
+      "risk": "演示",
+      "components": {},
+      "reasons": [
+        "SYNTHETIC-DEMO"
+      ]
+    }
+  ]
+}
