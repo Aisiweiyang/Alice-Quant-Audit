@@ -1,4 +1,4 @@
-# Alice Quant Audit · Alice 商业化 MVP 开源版
+# Alice-Quant-Audit · Alice 商业化 MVP
 
 Alice Quant Audit 用来检查 A 股量化策略的回测结果。导入行情后，可以先查数据质量，
 再比较策略、费用和参数对结果的影响，最后生成带图表和明细的 HTML 报告。
